@@ -1,0 +1,43 @@
+{
+  "name":"PWA examples",
+  "short_name":"PWA examples",
+  "id": "/layouts/home_loader.html",
+  "start_url": "/layouts/home_loader.html",
+  "background_color": "#6dcdb1",
+  "theme_color": "#009578" ,
+  "display": "standalone" ,
+  "icons": [
+    {
+      "src": "images/logo512.png",
+      "sizes": "512x512",
+      "type":"images/png",
+      "purpose":"maskable"
+    },
+    { 
+      "src": "images/logo192.png",
+      "sizes": "192x192",
+      "type": "images/png",
+      "purpose": "maskable"
+
+    },
+    { 
+      "src": "images/144x144.png",
+      "sizes": "144x144",
+      "type": "images/png",
+      "purpose": "any"
+
+    },
+    {
+      "src": "images/512x512.png",
+      "sizes": "512x512",
+      "type": "images/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/logo144px.svg",
+      "sizes": "144x144"
+    }
+    
+  ]       
+
+}

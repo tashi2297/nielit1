@@ -7,6 +7,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+<meta name="theme-color" content="#009578">
+
   <!-- place fav icons here -->
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
@@ -23,6 +25,12 @@
   <meta name="twitter:image" content="{{ site.baseurl | prepend: site.url }}/assets/img/meta/og-image.jpg" />
 
   <!-- Canonical urls -->
+
+<link rel="stylesheet" href="src/master.css">
+        <link rel="manifest" href="manifest.json">
+        <link rel="apple-touch-icon" href="images/180px.png">s
+
+
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
@@ -164,4 +172,9 @@ $(document).ready(function(){
   </script>
     <!-- JS for this web app -->
   <script src="{{ site.baseurl }}/assets/js/main.js?v={{ site.version_number }}"></script>
+
+
+
+<script src="index.js"></script>
+  
 </head>
