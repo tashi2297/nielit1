@@ -1,4 +1,7 @@
-<head>
+<!DOCTYPE html>
+<html>
+
+  <head>
 
   <link rel="manifest" href="/manifest.json">
   <script src="/index.js"></script>
@@ -17,40 +20,42 @@
 
   <!-- place fav icons here -->
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>WiFi Connected</title>
+  <meta name="description" content="A web-based audio guide theme for Jekyll.
+">
 
   <!-- Twitter cards and OG Image for Facebook -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="{{ site.twitter_username }}" />
-  <meta name="twitter:creator" content="{{ site.twitter_username }}" />
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
-  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta name="twitter:site" content="acmilabs" />
+  <meta name="twitter:creator" content="acmilabs" />
+  <meta name="twitter:title" content="WiFi Connected" />
+  <meta name="twitter:description" content="A web-based audio guide theme for Jekyll.
+" />
   
-  <meta name="og:image" content="{{ site.baseurl | prepend: site.url }}/assets/img/meta/og-image.jpg" />
-  <meta name="twitter:image" content="{{ site.baseurl | prepend: site.url }}/assets/img/meta/og-image.jpg" />
+  <meta name="og:image" content="http://localhost:4000/assets/img/meta/og-image.jpg" />
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/meta/og-image.jpg" />
 
   <!-- Canonical urls -->
 
 
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="http://localhost:4000/connected/">
+  <link rel="alternate" type="application/rss+xml" title="ACMI Audio Guide" href="http://localhost:4000/feed.xml">
 
   <!-- Stylesheets -->
 
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/js/slick.css" />
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/js/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/js/slick.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/js/slick-theme.css" />
 
   <!-- jQuery -->
-  <script src="{{ site.baseurl }}/assets/js/jquery-1.12.3.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/slick.min.js"></script>
+  <script src="/assets/js/jquery-1.12.3.min.js"></script>
+  <script src="/assets/js/slick.min.js"></script>
 
   <!-- jPlayer -->
-  <script src="{{ site.baseurl }}/assets/js/jplayer/jquery.jplayer.min.js"></script>
+  <script src="/assets/js/jplayer/jquery.jplayer.min.js"></script>
 
   <!-- CSS for this web app -->
-  <link rel='stylesheet' href='{{ "/assets/css/main.css" | prepend: site.baseurl }}?v={{ site.version_number }}'>
+  <link rel='stylesheet' href='/assets/css/main.css?v=1.0.0.1'>
 
   <script type="text/javascript">
 
@@ -159,7 +164,7 @@ $(document).ready(function(){
       });
 
     },
-    swfPath: "{{ site.baseurl }}/assets/js/jplayer",
+    swfPath: "/assets/js/jplayer",
     supplied: "mp3",
     wmode: "window",
     useStateClassSkin: true,
@@ -173,10 +178,39 @@ $(document).ready(function(){
 
   </script>
     <!-- JS for this web app -->
-  <script src="{{ site.baseurl }}/assets/js/main.js?v={{ site.version_number }}"></script>
+  <script src="/assets/js/main.js?v=1.0.0.1"></script>
 
 
 
 
   
 </head>
+
+
+  <body>
+  	<!-- Google Tag Manager -->
+
+<!-- drop in your Google Tag Manager or Analytics snippet here! -->
+
+<!-- End Google Tag Manager -->
+    <header class="site-header">
+  
+  <a class="site-title" href="/">
+    <img src="/assets/img/logo/audio-guide.png" alt="ACMI Audio Guide logo" class="site-logo"/>
+  </a>
+  
+</header>
+
+
+    <div class="page-content connected-page">
+      <div class="wrapper">
+        <p>You have successfully connected to the WiFi.</p>
+
+<p><a href="../welcome/" target="_system">Launch Audio Guide</a></p>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
